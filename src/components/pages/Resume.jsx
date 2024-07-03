@@ -30,7 +30,7 @@ const Resume = () => {
                 <Link to="/resume">Resume</Link>
               </h2>
               <a href={resume} target="_blank" className="resume_download">
-                Downloaded
+                Download
               </a>
             </div>
 
