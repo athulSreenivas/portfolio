@@ -8,21 +8,21 @@ const About = () => {
   const markdownContent = `
 
 # About Me
-Hi, I'm Athul Sreenivas, a software engineer specialized in web development. With over 3 years of experience, I've honed my skills in PHP, CodeIgniter, MySQL, Python, and JavaScript. I enjoy building efficient, scalable, and user-friendly web applications that solve real-world problems.
+Hi, I'm Athul Sreenivas, a software engineer focused on web development. I have 3+ years of hands-on experience building and improving web applications using PHP, CodeIgniter, MySQL, Python, and JavaScript. I care about writing clean, maintainable code and creating products that are fast, reliable, and easy to use.
 
 # Projects & Achievements
-- Developed and maintained multiple web applications that improved operational efficiency and user engagement.
-- Successfully led projects from conception to deployment, working closely with cross-functional teams to deliver high-quality solutions on time.
-- Implemented security best practices to protect user data and ensure compliance with industry standards.
+- Built and maintained multiple web applications that improved workflow efficiency and user engagement.
+- Led projects from planning to deployment, collaborating with cross-functional teams to deliver high-quality outcomes on schedule.
+- Applied security best practices to protect user data and support compliance with industry standards.
 
-# I Like
+# Interests
 
-- *Football:* I enjoy playing and watching football, appreciating the strategy and teamwork involved in the game.
-- *Movies:* I'm a movie enthusiast who loves exploring different genres and cinematic styles.
-- *Songs:* Music is a big part of my life, and I enjoy listening to a wide variety of songs.
-- *Swimming:* Swimming is one of my favorite activities, helping me stay fit and relaxed.
-- *Photography:* I have a passion for photography, capturing moments and creating visual stories.
-- *Coding*: I'm passionate about coding
+- *Football:* I enjoy both playing and watching football for the strategy, teamwork, and energy it brings.
+- *Movies:* I like exploring different genres and storytelling styles in cinema.
+- *Music:* Music is a big part of my day, and I listen to a wide range of artists and moods.
+- *Swimming:* Swimming helps me stay active, focused, and refreshed.
+- *Photography:* I enjoy capturing everyday moments and turning them into visual stories.
+- *Coding:* I genuinely enjoy learning new tools and improving how I build software.
 
 `;
 
