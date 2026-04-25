@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import dayjs from "dayjs";
+import React from 'react';
+import PropTypes from 'prop-types';
+import dayjs from 'dayjs';
 
 const Cell = ({ data }) => (
   <div className="cell-container">
@@ -10,7 +10,7 @@ const Cell = ({ data }) => (
           <a href={data.link}>{data.title}</a>
         </h3>
         <time className="published">
-          {dayjs(data.date).format("MMMM, YYYY")}
+          {dayjs(data.date).format('MMMM, YYYY')}
         </time>
       </header>
       <a href={data.link} className="image">
@@ -21,6 +21,13 @@ const Cell = ({ data }) => (
       </a>
       <div className="description">
         <p>{data.desc}</p>
+        {data.stack && data.stack.length > 0 && (
+          <div className="project-stack">
+            {data.stack.map((tag) => (
+              <span key={tag} className="stack-tag">{tag}</span>
+            ))}
+          </div>
+        )}
       </div>
     </article>
   </div>
@@ -33,6 +40,7 @@ Cell.propTypes = {
     image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
+    stack: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 

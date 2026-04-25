@@ -1,19 +1,49 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Markdown from "markdown-to-jsx";
-import Main from "../layout/Main";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Markdown from 'markdown-to-jsx';
+import Main from '../layout/Main';
 
-const About = () => {
-  // Define your Markdown content as a string
-  const markdownContent = `
+const ACHIEVEMENTS = [
+  {
+    badge: "India's Topper",
+    title: 'NPTEL — Programming in Java',
+    detail: 'Secured highest rank nationwide among thousands of participants',
+    year: 'Jul – Oct 2023',
+    modifier: '',
+  },
+  {
+    badge: "India's Topper",
+    title: 'NPTEL — Joy of Computing in Python',
+    detail: 'Achieved highest rank nationwide in Python programming',
+    year: 'Feb – Jun 2023',
+    modifier: '',
+  },
+  {
+    badge: 'Top 10',
+    title: 'Reboot Kerala Hackathon 2020',
+    detail: 'Only non-engineering college in Top 10 among 30+ colleges statewide',
+    year: '2020',
+    modifier: 'achievement-top10',
+  },
+  {
+    badge: 'In Progress',
+    title: 'IBM AI Engineering Professional Certificate',
+    detail: 'Completed Machine Learning with Python (Course 1 of 6) — Coursera',
+    year: '2025 – Present',
+    modifier: 'achievement-wip',
+  },
+];
 
+const markdownContent = `
 # About Me
-Hi, I'm Athul Sreenivas, a software engineer focused on web development. I have 3+ years of hands-on experience building and improving web applications using PHP, CodeIgniter, MySQL, Python, and JavaScript. I care about writing clean, maintainable code and creating products that are fast, reliable, and easy to use.
+Backend-focused Software Engineer with 4+ years of experience building scalable API-driven systems and AI-powered automation pipelines. I specialize in Python-based backend development, communication platform engineering, and production ML pipelines using Whisper, Ollama, and LLMs for audio intelligence.
 
-# Projects & Achievements
-- Built and maintained multiple web applications that improved workflow efficiency and user engagement.
-- Led projects from planning to deployment, collaborating with cross-functional teams to deliver high-quality outcomes on schedule.
-- Applied security best practices to protect user data and support compliance with industry standards.
+Currently at **RailYatri / IntrCity SmartBus**, where I architect messaging gateways processing 300K+ daily transactions and deploy on-premise AI systems — no paid cloud APIs required.
+
+# What I Build
+- **AI-powered infrastructure** — on-premise ASR pipelines (Whisper + Ollama), RAG-based chatbots (LangGraph + OpenAI), and call intelligence systems
+- **High-throughput backends** — event-driven APIs, multi-channel communication gateways, and real-time observability layers
+- **Full product lifecycles** — from planning and architecture through deployment and production monitoring
 
 # Interests
 
@@ -23,30 +53,38 @@ Hi, I'm Athul Sreenivas, a software engineer focused on web development. I have 
 - *Swimming:* Swimming helps me stay active, focused, and refreshed.
 - *Photography:* I enjoy capturing everyday moments and turning them into visual stories.
 - *Coding:* I genuinely enjoy learning new tools and improving how I build software.
-
 `;
 
-  return (
-    <Main title="About" description="Learn about Athul Sreenivas">
-      <article className="post markdown" id="about">
-        <header>
-          <div className="title">
-            <h2>
-              <Link to="/about">About Me</Link>
-            </h2>
-            {/* Assuming you want to dynamically count the words in the Markdown content */}
-            <p>
-              (in about{" "}
-              {markdownContent.split(/\s+/).filter((word) => word).length}{" "}
-              words)
-            </p>
+const About = () => (
+  <Main title="About" description="Learn about Athul Sreenivas">
+    <article className="post markdown" id="about">
+      <header>
+        <div className="title">
+          <h2>
+            <Link to="/about">About Me</Link>
+          </h2>
+          <p>
+            (in about{' '}
+            {markdownContent.split(/\s+/).filter((w) => w).length}{' '}
+            words)
+          </p>
+        </div>
+      </header>
+
+      <div className="achievement-grid">
+        {ACHIEVEMENTS.map(({ badge, title, detail, year, modifier }) => (
+          <div key={title} className={`achievement-card ${modifier}`}>
+            <span className="achievement-badge">{badge}</span>
+            <span className="achievement-title">{title}</span>
+            <span className="achievement-detail">{detail}</span>
+            <span className="achievement-year">{year}</span>
           </div>
-        </header>
-        {/* Render the Markdown content */}
-        <Markdown>{markdownContent}</Markdown>
-      </article>
-    </Main>
-  );
-};
+        ))}
+      </div>
+
+      <Markdown>{markdownContent}</Markdown>
+    </article>
+  </Main>
+);
 
 export default About;

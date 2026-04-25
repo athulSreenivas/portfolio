@@ -1,48 +1,39 @@
-// TODO Add a couple lines about each project
 const data = [
   {
-    "title": "AeroRhythm Enhanced",
-    "subtitle": "Final Year Project",
-    "image": "/images/projects/aerorhythm.jpg",
-    "link":"https://github.com/athulSreenivas/AeroRhythm",
-    "date": "2023-07-01",
-    "desc": "AeroRhythm Enhanced builds upon the original gesture-controlled music player by integrating personalized gesture profiles. It offering a highly interactive and personalized music experience.."
+    title: 'AeroRhythm Enhanced',
+    subtitle: 'Final Year Project',
+    image: '/images/projects/aerorhythm.jpg',
+    link: 'https://github.com/athulSreenivas/AeroRhythm',
+    date: '2023-07-01',
+    desc: 'Gesture-controlled music player with personalized gesture profiles. Detects hand gestures in real-time via webcam to control playback, volume, and track navigation — no touch required.',
+    stack: ['Python', 'OpenCV', 'MediaPipe', 'Flask'],
   },
   {
     title: 'SecureEval ProctorSuit',
-    subtitle: 'Advanced AI-Powered Online Exam Proctoring System',
+    subtitle: 'AI-Powered Online Exam Proctoring',
     image: '/images/projects/secureeval_proctorsuit.jpg',
     date: '2024-02-15',
-    desc:
-      'Developed an AI-driven proctoring system that integrates facial recognition, emotion prediction, '
-      + 'and object detection to ensure secure and fair online examinations. SecureEval ProctorSuit '
-      + 'addresses authentication, monitoring, and exam management challenges, providing a comprehensive solution '
-      + 'for the evolving needs of digital education.'
+    desc: 'AI-driven proctoring system integrating facial recognition, emotion prediction, and object detection to ensure secure and fair online examinations.',
+    stack: ['Python', 'TensorFlow', 'OpenCV', 'Flask', 'React'],
   },
   {
     title: 'Gemini Clone',
-    subtitle: 'A Gemini clone built using React and Vite',
+    subtitle: 'React + Vite',
     link: 'https://github.com/athulSreenivas/GeminiClone',
     image: '/images/projects/gemini.png',
     date: '2024-05-29',
-    desc:
-      'Developed a Gemini clone application using React and Vite '
-      + '.The project utilizes the Gemini API for real-time data '
-      + 'and employs modern web technologies like Redux and Bootstrap to deliver a seamless and intuitive user experience.'
-  },{
+    desc: 'Full-featured Gemini AI clone with real-time streaming responses, conversation history, and a clean chat interface powered by the Gemini API.',
+    stack: ['React', 'Vite', 'Gemini API', 'Redux', 'Bootstrap'],
+  },
+  {
     title: 'Spotify Clone',
-    subtitle: 'A Spotify clone built using React and Vite',
+    subtitle: 'React + Vite',
     link: 'https://github.com/athulSreenivas/spotify-clone',
     image: '/images/projects/spotify_.png',
     date: '2024-06-15',
-    desc:
-      'Created a Spotify clone application using React and Vite, featuring user authentication, music playback, '
-      + 'playlist management, and a responsive design. The project leverages the Spotify Web API for music data '
-      + 'and incorporates modern web technologies like Redux and Tailwind CSS to provide a seamless user experience.'
+    desc: 'Spotify clone with user authentication, music playback, playlist management, and responsive design. Integrates the Spotify Web API for live music data.',
+    stack: ['React', 'Vite', 'Spotify API', 'Redux', 'Tailwind CSS'],
   },
-  
-  
-  
 ];
 
 export default data;

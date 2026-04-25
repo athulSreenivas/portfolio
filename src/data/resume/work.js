@@ -12,50 +12,46 @@
  * @property {string[]} highlights - plain text highlights of the position (bulleted list)
  */
 const work = [
-  // {
-  //   name: "RailYatri",
-  //   position: "Technology Specialist",
-  //   url: "https://www.railyatri.in/",
-  //   startDate: "2024-04-03",
-  //   summary: `In my role as a PHP Developer, I collaborate with a dynamic team to drive backend development projects. My responsibilities include creating and maintaining APIs, ensuring high-quality code, and contributing to the overall success of our web applications. I actively participate in various stages of the development lifecycle, from planning and design to implementation and maintenance, ensuring that our projects meet the highest standards of performance and reliability.`,
-  //   highlights: ["1", "2", "3"],
-  // },
   {
-    name: "Levantar Solutions PVT",
-    position: "PHP Developer (Freelancer)",
-    url: "https://levantarsolutions.in/",
-    startDate: "2022-08-25",
-    endDate: "2024-04-25",
-    summary: `In my role at LEVANTAR SOLUTIONS, I oversee the entire development lifecycle of key web applications, managing both planning and execution phases. I have successfully enhanced website performance, resulting in increased user engagement and revenue.  My efforts in modernizing existing projects and optimizing processes have led to significant operational improvements and higher customer satisfaction.`,
+    name: 'RailYatri',
+    position: 'Technology Specialist',
+    url: 'https://www.railyatri.in/',
+    startDate: '2025-05-01',
+    summary: `Architecting and engineering backend systems for IntrCity SmartBus and RailYatri Ticketing platforms, focused on communication infrastructure, AI-powered tooling, and workflow automation at scale.`,
     highlights: [
-      `Orchestrated the complete development lifecycle of two web applications: "SiteManager" for builders and "BoutiqueManager" for boutique owners, overseeing all aspects of the projects.`,
-      `Optimized website performance by implementing efficient code and responsive design, resulting in a 50% reduction in page load time and a 20% decrease in bounce rate. These improvements led to a significant increase
-in conversions and revenue.`,
-      " Engineered a feature for generating and delivering quotations through the software via email,accelerating communication with clients by 50% and contributing to a 15% rise in customer satisfaction.",
-      ` Successfully transformed an outdated boutique project into a modernized software application while implementing
-an optimized inventory management system. This resulted in a 30% reduction in operational inefficiencies and
-20% faster inventory processing`,
+      'Architected a centralized communication service processing 300K+ daily transactions across WhatsApp Business API, SMS, Email, and IVR — serving as the single messaging gateway for IntrCity SmartBus and RailYatri Ticketing, improving system reliability by 40%.',
+      'Designed an event-driven API architecture using event IDs and standardized REST endpoints, enabling seamless multi-channel communication integration without direct vendor coupling.',
+      'Deployed an on-premise AI call intelligence system using Whisper (ASR), Ollama (open-source LLM), and PyAnnote Audio on a dedicated leased-line server — automatically transcribing and analyzing customer call recordings with zero dependency on paid APIs.',
+      'Built and deployed a production AI travel chatbot using LangGraph, OpenAI API, and a RAG pipeline, dynamically answering passenger queries using live internal API data.',
+      'Built a real-time reporting and observability layer with delivery tracking, failure analysis, and automated error handling, reducing manual monitoring effort by 60%.',
+      'Engineered workflow automation pipelines using n8n (Docker-based), integrating Slack with Google Sheets to automate internal communication and operational reporting.',
     ],
   },
   {
-    name: "Ignosi Enterprises LLP",
-    position: "Software Developer",
-    url: "https://ignosi.in/",
-    startDate: "2020-04-06",
-    endDate: "2022-04-08",
-    summary: `As a Software Developer, I spearheaded the development of a pioneering collection app for bank software, enhancing data synchronization and transaction efficiency. I integrated payment solutions and optimized the app's performance, resulting in faster data retrieval and improved user experience. My contributions significantly streamlined operations and boosted user confidence in the software.
-
-`,
+    name: 'Levantar Solutions',
+    position: 'Software Developer (Part-Time)',
+    url: 'https://levantarsolutions.in/',
+    startDate: '2022-10-01',
+    endDate: '2025-04-01',
+    summary: `Led full-stack development of SiteManager and BoutiqueManager — construction and retail management platforms — owning the entire product lifecycle as primary developer on a small team.`,
     highlights: [
-      ` Integrated the Razorpay gateway and orchestrated a comprehensive technology stack, incorporating Java, PHP,
-and REST API to ensure robust functionality and secure transactions in the development of the innovative bank
-software collection app.`,
-      `Utilized Flutter, Dart, PHP, and REST API to construct a robust applicatio`,
-      ` Pioneered a groundbreaking collection app for bank software, introducing an efficient offline-first approach that
-achieved an impressive 95% data synchronization success rate across servers and executives’ devices, even in
-offline scenarios.`,
-      `Seamlessly integrated the Razorpay gateway, resulting in a 25% reduction in payment processing time, further
-enhancing user experience with rapid transactions.`,
+      'Led development of SiteManager, a construction management platform covering labour attendance, site progress tracking, material inventory, document management, and client billing.',
+      'Built core system features including role-based access control (RBAC), automated PDF generation, email delivery pipelines, and real-time dashboards for operational reporting across SiteManager and BoutiqueManager.',
+      'Modernized BoutiqueManager legacy inventory system using CodeIgniter, improving stock management workflows and reducing manual processing overhead for retail operations.',
+    ],
+  },
+  {
+    name: 'Ignosi Enterprises LLP',
+    position: 'Software Developer',
+    url: 'https://ignosi.in/',
+    startDate: '2020-05-01',
+    endDate: '2022-04-01',
+    summary: `Contributed to Alchemy, a core banking platform, building PHP REST APIs, mobile apps, and payment integrations. Also developed offline-first field tools for banking agents operating in low-connectivity environments.`,
+    highlights: [
+      'Contributed to Alchemy, a core banking platform, developing PHP REST APIs for account management, KYC, loan origination, payment collections, and transaction ledger reporting.',
+      'Built an offline-first field collection app for banking agents using Java and PHP REST APIs, leveraging SQLite for local storage and auto-sync on network restoration — ensuring zero data loss.',
+      'Developed a bank management dashboard app using Flutter and Dart, enabling bank owners to monitor transactions, track collections, and approve loans in real time.',
+      'Integrated Razorpay payment gateway with secure transaction handling, error management, and reconciliation logic to ensure financial accuracy across the platform.',
     ],
   },
 ];

@@ -1,12 +1,12 @@
 const degrees = [
   {
-    school: 'College Of Engineering Chengannur',
-    degree: 'Master Of Computer Application',
+    school: 'College Of Engineering, Chengannur',
+    degree: 'Master Of Computer Applications (8.7 CGPA)',
     link: 'https://ceconline.edu/',
-    year: 2024,
+    year: 2025,
   },
   {
-    school: 'Nss College Rajakumari',
+    school: 'NSS College Rajakumari',
     degree: 'Bachelor Of Computer Application',
     link: 'https://www.nsscrky.ac.in/',
     year: 2020,
