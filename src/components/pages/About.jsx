@@ -5,6 +5,13 @@ import Main from '../layout/Main';
 
 const ACHIEVEMENTS = [
   {
+    badge: 'Excellence Award',
+    title: 'Service Excellence — RailYatri Annual Day 2025',
+    detail: 'Recognised for outstanding impact across communication platform engineering and AI-powered automation',
+    year: '2025',
+    modifier: '',
+  },
+  {
     badge: "India's Topper",
     title: 'NPTEL — Programming in Java',
     detail: 'Secured highest rank nationwide among thousands of participants',

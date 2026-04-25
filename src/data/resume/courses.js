@@ -1,5 +1,11 @@
 const courses = [
   {
+    title: 'Service Excellence Award — RailYatri Annual Day 2025',
+    number: 'AWARD',
+    link: 'https://www.railyatri.in/',
+    university: 'RailYatri',
+  },
+  {
     title: 'IBM AI Engineering Professional Certificate (In Progress)',
     number: 'IBM-AI',
     link: 'https://www.coursera.org/professional-certificates/ai-engineer',
