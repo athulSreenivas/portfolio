@@ -32,7 +32,7 @@ const work = [
     position: 'Software Developer (Part-Time)',
     url: 'https://levantarsolutions.in/',
     startDate: '2022-10-01',
-    endDate: '2025-04-01',
+    endDate: '2025-05-01',
     summary: `Led full-stack development of SiteManager and BoutiqueManager — construction and retail management platforms — owning the entire product lifecycle as primary developer on a small team.`,
     highlights: [
       'Led development of SiteManager, a construction management platform covering labour attendance, site progress tracking, material inventory, document management, and client billing.',
