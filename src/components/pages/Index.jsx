@@ -22,7 +22,7 @@ const Index = () => (
         <p className="hero-eyebrow">Backend Engineer &amp; AI Systems Builder</p>
 
         <h1 className="hero-headline">
-          I build backend systems<br />that move at scale.
+          I build backend systems <br/>that move at scale.
         </h1>
 
         <p className="hero-sub">
