@@ -26,9 +26,7 @@ const Index = () => (
         </h1>
 
         <p className="hero-sub">
-          Currently at <strong>RailYatri / IntrCity SmartBus</strong> — architecting
-          AI-powered communication infrastructure, on-premise LLM pipelines, and
-          speech intelligence systems processing 300K+ daily transactions.
+          Currently at <strong>RailYatri / IntrCity SmartBus</strong> — architecting AI-powered communication infrastructure, on-premise LLM pipelines, and call intelligence systems processing 300K+ daily transactions.
         </p>
 
         <div className="hero-stats">
